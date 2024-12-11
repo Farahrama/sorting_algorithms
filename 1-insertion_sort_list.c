@@ -12,7 +12,7 @@ return;
 current = (*list)->next;
 while (current != NULL)
 {
-while (current != NULL && current->prev != NULL && current->n < current->prev->n)
+while (current->prev != NULL && current->n < current->prev->n)
 {
 temp = current->prev;
 temp->next = current->next;
