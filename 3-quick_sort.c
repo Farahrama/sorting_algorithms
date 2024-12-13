@@ -27,11 +27,11 @@ int Lomuto(int *array, int low, int high, size_t size)
 {
 int pivot = array[high];
 int i = low - 1;
-int temp;
-int j;
-for (j = low; j < high; j++)
+int temp = 0;
+int j = low;
+for (; j < high; j++)
 {
-if (array[j] <= pivot)
+if (array[j] < pivot)
 {
 i++;
 if (i != j)
