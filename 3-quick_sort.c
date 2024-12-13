@@ -34,7 +34,7 @@ for (; j < high; j++)
 if (array[j] < pivot)
 {
 i++;
-if (i != j)
+if (array[i] != array[j])
 {
 temp = array[i];
 array[i] = array[j];
@@ -43,10 +43,13 @@ print_array(array, size);
 }
 }
 }
+if(array[i + 1] != array[high])
+{
 temp = array[i + 1];
 array[i + 1] = array[high];
 array[high] = temp;
 print_array(array, size);
+}
 return (i + 1);
 }
 /**
