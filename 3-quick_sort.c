@@ -43,7 +43,7 @@ print_array(array, size);
 }
 }
 }
-if(array[i + 1] != array[high])
+if (array[i + 1] != array[high])
 {
 temp = array[i + 1];
 array[i + 1] = array[high];
