@@ -33,8 +33,13 @@ temp = array[i + 1];
 array[i + 1] = array[high];
 array[high] = temp;
 print_array(array, size);
-return(i+1);
+return (i + 1);
 }
+/**
+ * quick_sort - Sorts an array of integers in ascending order using Quick sort.
+ * @array: The array to be sorted.
+ * @size: The size of the array.
+ */
 void quick_sort_recursive(int *array, int low, int high, size_t size)
 {
 int pivot;
