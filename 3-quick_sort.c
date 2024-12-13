@@ -23,7 +23,7 @@ i++;
 if (i != j)
 {
 temp = array[i];
-array[j] = array[i];
+array[i] = array[j];
 array[j] = temp;
 print_array(array, size);
 }
